@@ -11,18 +11,18 @@
 <body>
     <!-- Accept user imput -->
 
-    <!-- Principal Amount -->
     <div>
         Please Enter Amount of Loan:
-        <input type="text" id="principal">
+        <input type="text" id="principal"> <br>
 
         Loan Rate:
-        <input type="text" id="loan-rate">
+        <input type="text" id="rate"><br>
 
         Number of Years:
-        <input type="text" id="years">
+        <input type="text" id="years"><br>
 
-        <button onclick="#">Calculate</button>
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
     </div>
 
     <script>
@@ -30,6 +30,12 @@
             // get value of Principal Amount 
             principalAmount = document.getElementById('principal').value;
             // console.log(principalAmount);
+            loanRate = document.getElementById('rate').value;
+
+            numberOfYears = document.getElementById('years').value;
+
+            result = document.getElementById('result');
+            result.innerHTML = "The interest is " + (principalAmount * numberOfYears * loanRate / 100)
         }
     </script>
 </body>
