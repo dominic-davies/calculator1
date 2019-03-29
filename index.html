@@ -9,21 +9,40 @@
 </head>
 
 <body>
-    <!-- Accept user imput -->
-
-    <div>
-        Please Enter Amount of Loan:
-        <input type="text" id="principal"> <br>
-
-        Loan Rate:
-        <input type="text" id="rate"><br>
-
-        Number of Years:
-        <input type="text" id="years"><br>
-
-        <button onclick="calculate()">Calculate</button>
-        <p id="result"></p>
+    <div id="wrapper">
+        <div id="left-section">
+            <div id="calculator">
+                <div class="logo">
+                    <h1>Calculator</h1>
+                </div>
+                <form>
+                    <!-- Accept user imput -->
+                    <div>
+                        <label>Please Enter Amount of Loan:</label>
+                        <input type="text" id="principal" class="text-input">
+                    </div>
+                    <div>
+                        <label>Loan Rate:</label>
+                        <input type="text" id="rate" class="text-input"><br>
+                    </div>
+                    <div>
+                        <label>Number of Years:</label>
+                        <input type="text" id="years" class="text-input"><br>
+                    </div>
+                    <button onclick="calculate()">Calculate</button>
+                    <p id="result"></p>
+                </form>
+            </div>
+        </div>
+        <footer></footer>
     </div>
+    <div id="right-section">
+
+    </div>
+
+    </div>
+
+
 
     <script>
         function calculate() {
