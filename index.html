@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- Accept user imput -->
+
+    <!-- Principal Amount -->
+    <div>
+        Please Enter Amount of Loan:
+        <input type="text" id="principal">
+
+        Loan Rate:
+        <input type="text" id="loan-rate">
+
+        Number of Years:
+        <input type="text" id="years">
+
+        <button onclick="#">Calculate</button>
+    </div>
+
+    <script>
+        function calculate() {
+            // get value of Principal Amount 
+            principalAmount = document.getElementById('principal').value;
+            // console.log(principalAmount);
+        }
+    </script>
+</body>
+
+</html>
